@@ -51,3 +51,13 @@ scramblers:
   generator: <L,R,U,D,F,B> * 24
 - name: 3x3_25
   generator: <L,R,U,D,F,B> * 25
+- name: 3x3_26
+  generator: <L,R,U,D,F,B> * 26
+- name: 3x3_27
+  generator: <L,R,U,D,F,B> * 27
+- name: 3x3_28
+  generator: <L,R,U,D,F,B> * 28
+- name: 3x3_29
+  generator: <L,R,U,D,F,B> * 29
+- name: 3x3_30
+  generator: <L,R,U,D,F,B> * 30
