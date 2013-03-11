@@ -27,14 +27,17 @@ end
 $data["scramblers"].each do |scrambler|
   log "-----#{scrambler["name"]}-----"
   scramble_file = "scrambles/#{scrambler["name"]}"
+
   unless File.exist?(scramble_file)
     log "Scrambles for #{scrambler["name"]} not generating, generating..."
     source = File.read(scrambler["generator"])
     log "scrambler generator is #{source}"
     generator = Ramsdel::Scrambler.new(source)
+
     File.open(scramble_file, 'w') do |file|
-      $count.times { file.write(generator.next + "\n") }
+      $count.times { file.puts(generator.next) }
     end
+
     log "done"
   end
 
