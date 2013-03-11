@@ -1,5 +1,9 @@
 ---
 scramble_count: 100
 scramblers:
-- name: simple
-  generator: scramblers/simple
+- name: RU
+  generator: scramblers/RU
+- name: RU_5_10_10
+  generator: scramblers/RU_5_10_10
+- name: LRUDFB
+  generator: scramblers/LRUDFB
