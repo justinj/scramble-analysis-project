@@ -1,0 +1,5 @@
+---
+scramble_count: 100
+scramblers:
+- name: 3x3_1
+  generator: <L,R,U,D,F,B> * 1

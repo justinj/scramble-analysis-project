@@ -1,4 +1,4 @@
 scrambles
 data/yaml_backup
-data/data_dirty.yml
+data/*_results.yml
 cache
