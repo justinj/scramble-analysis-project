@@ -1,0 +1,7 @@
+---
+scramble_count: 100
+scramblers:
+- name: simple
+  generator: scramblers/simple
+  eo: 12.0
+  co: 4.5

@@ -1,0 +1,3 @@
+[submodule "lib/ramsdel"]
+	path = lib/ramsdel
+	url = git@github.com:JustinJ/ramsdel.git
