@@ -1,5 +1,53 @@
 ---
-scramble_count: 100
+scramble_count: 1
 scramblers:
 - name: 3x3_1
   generator: <L,R,U,D,F,B> * 1
+- name: 3x3_2
+  generator: <L,R,U,D,F,B> * 2
+- name: 3x3_3
+  generator: <L,R,U,D,F,B> * 3
+- name: 3x3_4
+  generator: <L,R,U,D,F,B> * 4
+- name: 3x3_5
+  generator: <L,R,U,D,F,B> * 5
+- name: 3x3_6
+  generator: <L,R,U,D,F,B> * 6
+- name: 3x3_7
+  generator: <L,R,U,D,F,B> * 7
+- name: 3x3_8
+  generator: <L,R,U,D,F,B> * 8
+- name: 3x3_9
+  generator: <L,R,U,D,F,B> * 9
+- name: 3x3_10
+  generator: <L,R,U,D,F,B> * 10
+- name: 3x3_11
+  generator: <L,R,U,D,F,B> * 11
+- name: 3x3_12
+  generator: <L,R,U,D,F,B> * 12
+- name: 3x3_13
+  generator: <L,R,U,D,F,B> * 13
+- name: 3x3_14
+  generator: <L,R,U,D,F,B> * 14
+- name: 3x3_15
+  generator: <L,R,U,D,F,B> * 15
+- name: 3x3_16
+  generator: <L,R,U,D,F,B> * 16
+- name: 3x3_17
+  generator: <L,R,U,D,F,B> * 17
+- name: 3x3_18
+  generator: <L,R,U,D,F,B> * 18
+- name: 3x3_19
+  generator: <L,R,U,D,F,B> * 19
+- name: 3x3_20
+  generator: <L,R,U,D,F,B> * 20
+- name: 3x3_21
+  generator: <L,R,U,D,F,B> * 21
+- name: 3x3_22
+  generator: <L,R,U,D,F,B> * 22
+- name: 3x3_23
+  generator: <L,R,U,D,F,B> * 23
+- name: 3x3_24
+  generator: <L,R,U,D,F,B> * 24
+- name: 3x3_25
+  generator: <L,R,U,D,F,B> * 25

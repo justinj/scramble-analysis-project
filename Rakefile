@@ -1,7 +1,9 @@
 task :clean do
   sh "rm -rf scrambles"
   mkdir "scrambles"
-  sh "rm data/data_results.yml" if File.exist?("data/data_results.yml")
+  Dir.glob("data/*_results.yml").each do |file|
+    rm file if File.exist?(file)
+  end
 end
 
 task :run do

@@ -1,4 +1,4 @@
-require_relative "analysis_job"
+require_relative "analyzer"
 
 class ScrambleType
   def initialize scrambler
@@ -8,7 +8,7 @@ class ScrambleType
     @scramble_file = scrambler["scramble_list"] || "scrambles/#@name"
   end
 
-  def generate_scrambles
+  def generate_scrambles(count)
     if File.exist?(@scramble_file)
       $LOGGER.info "#@name already has scrambles generated..."
     else
@@ -17,10 +17,8 @@ class ScrambleType
       scrambler = Ramsdel::Scrambler.new(@generator)
 
       File.open(@scramble_file, 'w') do |file|
-        $count.times { file.puts(scrambler.next) }
+        count.times { file.puts(scrambler.next) }
       end
-
-      $LOGGER.info "done"
     end
 
     $LOGGER.info "scramble file is #{@scramble_file}"
@@ -31,8 +29,9 @@ class ScrambleType
       $LOGGER.info "stat #{stat} already calculated, skipping..."
     else
       $LOGGER.info "stat #{stat} not yet calculated, calculating..."
-      job = ScrambleAnalyzer::AnalysisJob.new(@scramble_file, stat) 
+      job = ScrambleAnalyzer::Analyzer.new(@scramble_file, stat) 
       @scrambler[stat] = job.perform
+      $LOGGER.info "done, result was #{@scrambler[stat]}"
     end
   end
 end
